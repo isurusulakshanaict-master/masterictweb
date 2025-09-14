@@ -3,395 +3,564 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Master ICT with Isuru Sulakshana</title>
+  <title>ICT Teacher | A/L & O/L Specialist</title>
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <!-- AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Scroll to Top Button -->
-  <button id="scrollTopBtn" title="Go to top" class="btn-scroll-top">
-    &uarr;
-  </button>
-  <!-- Banner Slider & Top Menu -->
-  <header class="header-section">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm fixed-top">
-      <div class="container d-flex align-items-center">
-        <img src="c:/Users/User/Pictures/profile_pic.png" alt="Smiling ICT teacher Isuru Sulakshana facing forward in a classroom setting with Master ICT with Isuru Sulakshana text visible, welcoming and friendly atmosphere" class="navbar-profile-img me-3">
-        <a class="navbar-brand fw-bold" href="#">Master ICT with Isuru Sulakshana</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav align-items-center gap-lg-3">
-            <li class="nav-item"><a class="nav-link active" href="#home">HOME</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
-            <li class="nav-item"><a class="nav-link" href="#portfolio">WHAT STUDENT SAYS</a></li>
-            <li class="nav-item"><a class="nav-link" href="#gallery">GALLERY</a></li>
-            <li class="nav-item"><a class="nav-link" href="#register">JOIN WITH US</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <section id="home" class="home-section">
-      <div id="mainBannerCarousel" class="carousel slide home-carousel">
-        <!-- Carousel Indicators -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#mainBannerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#mainBannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#mainBannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="banner-img-wrapper">
-              <img src="c:/Users/User/Downloads/Gemini_Generated_Image_ug6b7oug6b7oug6b.png" class="banner-img" alt="Banner Image 1">
-              <div class="carousel-caption text-start">
-                <h1 class="fw-bold">Hi, I am <span class="brand-highlight">Your Name</span></h1>
-                <p class="lead">ICT Teacher & Mentor</p>
-                <a href="#register" class="btn btn-success me-2">Register</a>
-                <a href="#portfolio" class="btn btn-outline-success">View Portfolio</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="banner-img-wrapper">
-              <img src="d:\Studio Photos\new exported bulk\DSC_8724.jpg" class="banner-img" alt="Banner Image 2">
-              <div class="carousel-caption text-start">
-                <h1 class="fw-bold">Showcasing Student Success</h1>
-                <p class="lead">Explore our achievements and projects</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="banner-img-wrapper">
-              <img src="d:\Studio Photos\new exported bulk\DSC_8779.jpg" class="banner-img" alt="Banner Image 3">
-              <div class="carousel-caption text-start">
-                <h1 class="fw-bold">Join Our Learning Journey</h1>
-                <p class="lead">Be part of a vibrant ICT community</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#mainBannerCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#mainBannerCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-  </header>
-
-  <!-- About Section -->
-  <section id="about" class="d-flex align-items-center justify-content-center vh-100 w-100 border-sides-about">
-    <div class="row align-items-center">
-      <div class="col-md-4 text-center mb-3 mb-md-0">
-        <img src="c:/Users/User/Downloads/Gemini_Generated_Image_ug6b7oug6b7oug6b.png" alt="Profile Photo" class="rounded shadow about-profile-img">
-      </div>
-      <div class="col-md-8">
-        <h2>About Me</h2>
-        <p>A passionate ICT teacher dedicated to inspiring students and sharing knowledge in technology and digital skills.</p>
-        <ul class="list-unstyled">
-          <li><strong>Name:</strong> Your Name</li>
-          <li><strong>Email:</strong> your.email@example.com</li>
-          <li><strong>Location:</strong> Your City, Country</li>
-          <li><strong>Phone:</strong> +123-456-7890</li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom navbar-solid" id="mainNavbar">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#home">
+        <img src="images/profile_pic.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top me-2">
+        Master ICT with Isuru Sulakshana
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#join">Join Now</a></li>
         </ul>
-        <!-- Qualifications Cards -->
-        <div class="row g-4 justify-content-center mt-4">
-          <div class="col-12 col-md-4">
-            <div class="card text-center shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">BSc in ICT</h5>
-                <p class="card-text">University Name</p>
-              </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scrollProgress" title="Scroll to top">
+    <svg width="60" height="60" viewBox="0 0 60 60">
+      <circle cx="30" cy="30" r="26" stroke="#D32F2F" stroke-width="4" fill="#fff"/>
+      <circle cx="30" cy="30" r="26" id="progressCircle" stroke="#B71C1C" stroke-width="6" fill="none" stroke-linecap="round" style="transform: rotate(-90deg); transform-origin: 50% 50%;"/>
+      <polyline points="30,18 30,34" stroke="#B71C1C" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <polyline points="24,24 30,18 36,24" stroke="#B71C1C" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- Home Section (Carousel) -->
+  <section class="section p-0" id="home" data-aos="fade-in">
+    <div id="heroCarousel" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner h-100">
+        <div class="carousel-item active h-100">
+          <img src="images/DSC_8868.jpg" class="d-block w-100 h-100" alt="Welcome">
+          <div class="carousel-caption d-none d-md-block caption-top-left" data-aos="fade-up">
+            <h1 class="fw-bold">Master ICT with Expert Guidance</h1>
+            <p>Your Gateway to A/L & O/L ICT Success</p>
+            <a href="#join" class="btn btn-lg" style="background:var(--accent-blue);color:white;">Start Your ICT Journey</a>
+          </div>
+        </div>
+        <div class="carousel-item h-100">
+          <img src="images/DSC_8703.jpg" class="d-block w-100 h-100" alt="A/L ICT">
+          <div class="carousel-caption d-none d-md-block caption-top-left" data-aos="fade-up">
+            <h1 class="fw-bold">A/L ICT Course Highlights</h1>
+            <p>Comprehensive syllabus, practical labs, exam-focused training</p>
+            <a href="#join" class="btn btn-lg" style="background:var(--primary-red);color:white;">Enroll Today</a>
+          </div>
+        </div>
+        <div class="carousel-item h-100">
+          <img src="images/DSC_8737.jpg" class="d-block w-100 h-100" alt="O/L ICT">
+          <div class="carousel-caption d-none d-md-block caption-top-left" data-aos="fade-up">
+            <h1 class="fw-bold">O/L ICT Program Features</h1>
+            <p>Interactive lessons, hands-on projects, exam tips</p>
+            <a href="#join" class="btn btn-lg" style="background:var(--accent-blue);color:white;">Book Free Consultation</a>
+          </div>
+        </div>
+        <div class="carousel-item h-100">
+          <img src="images/DSC_8886.jpg" class="d-block w-100 h-100" alt="Success">
+          <div class="carousel-caption d-none d-md-block caption-top-left" data-aos="fade-up">
+            <h1 class="fw-bold">Success Statistics & Achievements</h1>
+            <p>Join 1000+ successful students. 95% pass rate!</p>
+            <a href="#portfolio" class="btn btn-lg" style="background:var(--primary-red);color:white;">View Student Portfolio</a>
+          </div>
+        </div>
+        <div class="carousel-item h-100">
+          <img src="images/DSC_8913.jpg" class="d-block w-100 h-100" alt="Join">
+          <div class="carousel-caption d-none d-md-block caption-top-left" data-aos="fade-up">
+            <h1 class="fw-bold">Transform Your Digital Future</h1>
+            <p>Ready to excel in ICT? Join now!</p>
+            <a href="#join" class="btn btn-lg" style="background:var(--accent-blue);color:white;">Join Our Community</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- About Me Section (moved to second page) -->
+  <section class="section" id="about" data-aos="fade-in">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5" data-aos="fade-right">
+          <img src="images/corosal1.png" class="img-fluid rounded shadow-lg" alt="Teacher">
+        </div>
+        <div class="col-md-7" data-aos="fade-left">
+          <h2 class="mb-3" style="color:var(--primary-red);">About Me</h2>
+          <p>Isuru Sulakshana is a seasoned industrial expert in Information and Communication Technology with over a decade of experience.</p>
+          <p>
+His passion for ICT began during his school days, and despite not having the opportunity to study it for his Advanced Level examinations, he strategically chose the mathematics stream to pursue his dream. Following his A-Levels, he earned his B.Sc. Honors in Information Technology from SLIIT and subsequently completed his M.Sc. in IT at University of Moratuwa.</p>
+          <div class="mb-3">
+            <div class="fw-bold">Qualifications</div>
+            <div class="progress mb-2" style="height: 40px;">
+              <div class="progress-bar" role="progressbar" style="width: 100%;background:var(--accent-blue);font-size: x-large;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">BsC in IT (SLIIT)</div>
+            </div>
+            <div class="progress mb-2" style="height: 40px;">
+              <div class="progress-bar" role="progressbar" style="width: 100%;background:var(--primary-red);font-size: x-large;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">MsC in IT (UoM)</div>
             </div>
           </div>
-          <div class="col-12 col-md-4">
-            <div class="card text-center shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">MSc in Computer Science</h5>
-                <p class="card-text">University Name</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="card text-center shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Certified Web Developer</h5>
-                <p class="card-text">Certification Body</p>
-              </div>
-            </div>
+          <div class="mt-4 text-center">
+            <a href="about-extended.html" class="btn btn-lg read-more-btn" style="background:var(--primary-red);color:white;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 2px 12px rgba(33,150,243,0.08);border-radius:16px;padding:0.75rem 2rem;font-weight:600;">
+              Read More
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Qualifications Section -->
-
-    <!-- Student Portfolio Section -->
-  <section id="portfolio" class="d-flex align-items-center justify-content-center vh-100 w-100" style="background:#f2f2ec;">
-      <h2 class="text-center mb-4">Student Portfolio</h2>
-      <div class="row g-4 justify-content-center">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card shadow-sm h-100">
-            <img src="portfolio/student1.jpg" class="card-img-top rounded" alt="Student 1">
-            <div class="card-body">
-              <h5 class="card-title">Student Name 1</h5>
-              <p class="card-text">Achievement: Winner of National Coding Competition 2025</p>
-              <p class="card-text"><small class="text-muted">Project: Smart Attendance System</small></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card shadow-sm h-100">
-            <img src="portfolio/student2.jpg" class="card-img-top rounded" alt="Student 2">
-            <div class="card-body">
-              <h5 class="card-title">Student Name 2</h5>
-              <p class="card-text">Achievement: Published Research on AI in Education</p>
-              <p class="card-text"><small class="text-muted">Project: AI Chatbot for Students</small></p>
-            </div>
-          </div>
-        </div>
-        <!-- Add more student cards as needed -->
+  <!-- Student Portfolio Carousel Section -->
+  <section class="section p-0" id="portfolio" style="background: url('images/portfolio-bg.jpg') center/cover, var(--light-gray); min-height: 100vh;">
+    <div class="container pt-5">
+      <h2 class="text-center mb-5" style="color:var(--primary-red);margin-top:80px;z-index:2;position:relative;" data-aos="fade-up">Student Portfolio</h2>
+    </div>
+    <div id="portfolioCarousel" class="carousel slide h-100 d-flex align-items-center justify-content-center" data-bs-ride="carousel" data-bs-interval="7000">
+      <div class="carousel-indicators mb-0">
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-    </section>
+      <div class="carousel-inner h-100">
+        <div class="carousel-item active h-100">
+          <div class="d-flex flex-column justify-content-center align-items-center h-100">
+            <div class="mb-4 text-center">
+              <span class="text-danger fw-bold" style="font-size:1.1rem;"><i class="fa-solid fa-book-open"></i> OUR STUDENTS TESTIMONIALS</span>
+              <div style="font-size:2.2rem;font-weight:700;color:var(--dark-navy);margin-top:0.5rem;">ශ්‍රාද්ධාන්තගේ අදහස්</div>
+            </div>
+            <div class="card shadow-lg p-4 mx-auto" style="max-width:700px;background:rgba(255,255,255,0.95);border-radius:18px;">
+              <div class="card-body">
+                <p class="mb-4" style="font-size:1.25rem;line-height:2;">" මනුෂ්‍යසහකාරගේ ජීවිතේ හැදූවම ලැබෙන්නේ නිහොසොවම මම එක පිළිගන්න එකම පොදුවා තමයි සාර්ථ්‍යයි. සාර්ථ්‍යමලද කියන කතාවක් මට මතක් වෙන්නා " උබගේ ජීවිත කතාවට උබටම ලියන්නයි". ඒකතාව ඇත්තයි සාර්ථ්‍ය.... අරේ ගෙවී එක ගාගන්නා ඔබට අහිමියි. මට මගේ ගෙවී ගාගන්න සාර්ථ්‍ය ඒ සාර්ථ්‍යයි .... "</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">Student</span>
+                  <span class="text-danger">2024 A/L</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item h-100">
+          <div class="d-flex flex-column justify-content-center align-items-center h-100">
+            <div class="mb-4 text-center">
+              <span class="text-danger fw-bold" style="font-size:1.1rem;"><i class="fa-solid fa-book-open"></i> OUR STUDENTS TESTIMONIALS</span>
+              <div style="font-size:2.2rem;font-weight:700;color:var(--dark-navy);margin-top:0.5rem;">අනුරාධාගේ අදහස්</div>
+            </div>
+            <div class="card shadow-lg p-4 mx-auto" style="max-width:700px;background:rgba(255,255,255,0.95);border-radius:18px;">
+              <div class="card-body">
+                <p class="mb-4" style="font-size:1.25rem;line-height:2;">" ICT class එකේ ඉගෙන ගන්නා විදිහ මට අලුත් අත්දැකීමක්. Practical sessions වලින් මට exam එකට confidence එකක් ලැබුණා. "</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">Anuradha</span>
+                  <span class="text-danger">2023 O/L</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item h-100">
+          <div class="d-flex flex-column justify-content-center align-items-center h-100">
+            <div class="mb-4 text-center">
+              <span class="text-danger fw-bold" style="font-size:1.1rem;"><i class="fa-solid fa-book-open"></i> OUR STUDENTS TESTIMONIALS</span>
+              <div style="font-size:2.2rem;font-weight:700;color:var(--dark-navy);margin-top:0.5rem;">සමන්ගේ අදහස්</div>
+            </div>
+            <div class="card shadow-lg p-4 mx-auto" style="max-width:700px;background:rgba(255,255,255,0.95);border-radius:18px;">
+              <div class="card-body">
+                <p class="mb-4" style="font-size:1.25rem;line-height:2;">" Sir Isuru's teaching style is very friendly and exam-focused. I improved my ICT grades a lot after joining his class! "</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">Saman</span>
+                  <span class="text-danger">2022 A/L</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
 
-  <!-- Photo Gallery Section -->
-  <section id="gallery" class="d-flex align-items-center justify-content-center vh-100 w-100" style="background:#e9ecef;">
-    <h2 class="text-center mb-4">Photo Gallery</h2>
-    <div class="gallery-slider d-flex overflow-hidden" style="position:relative; height:260px;">
-      <div class="gallery-track d-flex" style="transition: transform 2s cubic-bezier(.77,0,.18,1); will-change:transform;">
-        <div class="col-6 col-md-4 col-lg-3">
-          <img src="gallery/photo1.jpg" class="img-fluid rounded shadow-sm" alt="Gallery Photo 1">
+  <!-- Gallery Section -->
+  <section class="section" id="gallery" data-aos="fade-in">
+    <div class="container">
+      <h2 class="text-center mb-5" style="color:var(--primary-red);" data-aos="fade-up">Gallery</h2>
+        <h2 class="text-center mb-4" style="color:var(--primary-red);">Image Gallery</h2>
+        <div class="row mb-5">
+          <div class="col-md-4 mb-4">
+            <img src="images/DSC_8703.jpg" class="img-fluid gallery-img gallery-hover" alt="Gallery Image 1" style="cursor:pointer;">
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="images/DSC_8886.jpg" class="img-fluid gallery-img gallery-hover" alt="Gallery Image 2" style="cursor:pointer;">
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="images/DSC_8737.jpg" class="img-fluid gallery-img gallery-hover" alt="Gallery Image 3" style="cursor:pointer;">
+          </div>
         </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <img src="gallery/photo2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery Photo 2">
+        <h2 class="text-center mb-4" style="color:var(--primary-red);">Video Gallery</h2>
+        <div class="row mb-4">
+          <div class="col-md-4 mb-4">
+            <img src="images/video1.png" class="img-fluid video-thumb gallery-hover" alt="Video 1" style="cursor:pointer;" data-video="https://www.youtube.com/watch?v=3rZ8yq8K-X0">
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="images/video1.png" class="img-fluid video-thumb gallery-hover" alt="Video 2" style="cursor:pointer;" data-video="https://www.youtube.com/watch?v=3rZ8yq8K-X0">
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="images/video1.png" class="img-fluid video-thumb gallery-hover" alt="Video 3" style="cursor:pointer;" data-video="https://www.youtube.com/watch?v=3rZ8yq8K-X0">
+          </div>
         </div>
-        <!-- Add more photos as needed -->
+        <div class="row mb-4">
+          <div class="col-md-4 mb-4">
+            <img src="images/video2.png" class="img-fluid video-thumb gallery-hover" alt="Video 4" style="cursor:pointer;" data-video="https://www.youtube.com/watch?v=3rZ8yq8K-X0">
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="images/video2.png" class="img-fluid video-thumb gallery-hover" alt="Video 5" style="cursor:pointer;" data-video="https://www.youtube.com/watch?v=3rZ8yq8K-X0">
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="images/video2.png" class="img-fluid video-thumb gallery-hover" alt="Video 6" style="cursor:pointer;" data-video="https://www.youtube.com/watch?v=3rZ8yq8K-X0">
+          </div>
+        </div>
+      </div>
+      <!-- Image Popup Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+            <img src="" id="modalImage" class="img-fluid" alt="Gallery Image">
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Video Popup Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+            <div class="ratio ratio-16x9">
+            <iframe id="modalVideo" src="" title="YouTube video" allowfullscreen></iframe>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
       </div>
     </div>
   </section>
 
-  <!-- Video Gallery Section -->
-  <section id="videos" class="d-flex align-items-center justify-content-center vh-100 w-100 video-section">
-    <div class="container-fluid px-4">
-      <div class="video-slider d-flex overflow-auto">
-        <div class="video-track d-flex flex-nowrap">
-          <div class="col-12 col-md-6 col-lg-4" style="min-width:340px;">
-            <div class="ratio ratio-16x9 shadow-sm rounded">
-              <iframe src="https://www.youtube.com/embed/cN_0eStcb3Y" title="Video 1" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4" style="min-width:340px;">
-            <div class="ratio ratio-16x9 shadow-sm rounded">
-              <iframe src="https://www.youtube.com/embed/Ysvh9yb283I" title="Video 2" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4" style="min-width:340px;">
-            <div class="ratio ratio-16x9 shadow-sm rounded">
-              <iframe src="https://www.youtube.com/embed/A_hfcDIskmg" title="Video 3" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4" style="min-width:340px;">
-            <div class="ratio ratio-16x9 shadow-sm rounded">
-              <iframe src="https://www.youtube.com/embed/X9W5sYemndM" title="Video 4" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4" style="min-width:340px;">
-            <div class="ratio ratio-16x9 shadow-sm rounded">
-              <iframe src="https://www.youtube.com/embed/mbN9buRbkRk" title="Video 5" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4" style="min-width:340px;">
-            <div class="ratio ratio-16x9 shadow-sm rounded">
-              <iframe src="https://www.youtube.com/embed/jzOR23wWHog" title="Video 6" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4" style="min-width:340px;">
-            <div class="ratio ratio-16x9 shadow-sm rounded">
-              <iframe src="https://www.youtube.com/embed/lmGX06L_nXM" title="Video 7" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4" style="min-width:340px;">
-            <div class="ratio ratio-16x9 shadow-sm rounded">
-              <iframe src="https://www.youtube.com/embed/SzL4ToPG5Sk" title="Video 8" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4" style="min-width:340px;">
-            <div class="ratio ratio-16x9 shadow-sm rounded">
-              <iframe src="https://www.youtube.com/embed/2gUIooH6N_I" title="Video 9" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4" style="min-width:340px;">
-            <div class="ratio ratio-16x9 shadow-sm rounded">
-              <iframe src="https://www.youtube.com/embed/3rZ8yq8K-X0" title="Video 10" allowfullscreen></iframe>
-            </div>
-          </div>
+  <!-- Class Time Section -->
+  <section class="section" id="class-time" data-aos="fade-in">
+    <div class="container">
+      <div class="d-flex flex-column align-items-center justify-content-center mb-4" style="min-height:120px;">
+        <div id="onlineSriLanka" class="online-highlight mb-4" style="font-size:2.2rem;font-weight:700;color:var(--primary-red);background:linear-gradient(90deg,#fff 0%,#878181 100%);border-radius:16px;padding:1rem 2rem;box-shadow:0 4px 32px rgba(33,150,243,0.08);">
+          Online for Sri Lanka
         </div>
       </div>
+      <h2 class="text-center mb-4" style="color:var(--primary-red);">Weekly Class Time</h2>
+    <div class="table-responsive"></div>
+    <table class="table table-striped text-center align-middle calendar-table" style="cursor:pointer;">
+      <thead class="table-dark">
+      <tr>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Class</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="table-row-hover"><td>Monday</td><td>8:00 PM - 10:00 PM</td><td>O/L ICT - Paper Class</td></tr>
+      <tr class="table-row-hover"><td>Tuesday</td><td>5:30 PM - 7:30 PM</td><td>A/L ICT - 2027</td></tr>
+      <tr class="table-row-hover"><td>Wednesday</td><td>6:00 PM - 8:00 PM</td><td>A/L ICT</td></tr>
+      <tr class="table-row-hover"><td>Thursday</td><td>5:30 PM - 7:30 PM</td><td>O/L ICT - Revision</td></tr>
+      <tr class="table-row-hover"><td>Friday</td><td>6:00 PM - 8:00 PM</td><td>A/L ICT</td></tr>
+      <tr class="table-row-hover"><td>Saturday</td><td>9:00 AM - 11:00 AM</td><td>AL ICT - Paper Class</td></tr>
+      <tr class="table-row-hover"><td>Sunday</td><td>8:00 PM - 10:30 PM</td><td>A/L ICT Theory - 2025</td></tr>
+      </tbody>
+    </table>
+    </div>
     </div>
   </section>
 
-  <!-- Registration Form Section -->
-  <section id="register" class="d-flex align-items-center justify-content-center vh-100 w-100" style="background:#e6e7d6; scroll-margin-top:100px;">
-    <div class="container-fluid px-4">
-      <h2 class="text-center mb-4">Student Registration</h2>
-      <form class="mx-auto modern-form">
+  <!-- Join Now Section -->
+  <section class="section" id="join" data-aos="fade-in">
+    <div class="container">
+      <h2 class="text-center mb-4" style="color:var(--primary-red);" data-aos="fade-up">Join Now</h2>
+      <form class="mx-auto p-4 rounded shadow-lg bg-white" style="max-width:600px;" id="joinForm" data-aos="fade-up">
         <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control form-control-lg rounded-3" id="name" required>
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullName" name="fullName" required>
+        </div>
+        <div class="mb-3">
+          <label for="age" class="form-label">Age</label>
+          <input type="number" class="form-control" id="age" name="age" min="10" max="25" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Exam Level</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="examLevel" id="al" value="A/L" required>
+            <label class="form-check-label" for="al">A/L</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="examLevel" id="ol" value="O/L" required>
+            <label class="form-check-label" for="ol">O/L</label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="year" class="form-label">Year Doing Exam</label>
+          <select class="form-select" id="year" name="year" required>
+            <option value="">Select Year</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="district" class="form-label">District</label>
+          <select class="form-select" id="district" name="district" required>
+            <option value="">Select District</option>
+            <option value="Colombo">Colombo</option>
+            <option value="Gampaha">Gampaha</option>
+            <option value="Kandy">Kandy</option>
+            <option value="Galle">Galle</option>
+            <option value="Matara">Matara</option>
+            <option value="Kurunegala">Kurunegala</option>
+            <option value="Jaffna">Jaffna</option>
+            <option value="Anuradhapura">Anuradhapura</option>
+            <option value="Badulla">Badulla</option>
+            <option value="Ratnapura">Ratnapura</option>
+            <!-- Add all Sri Lankan districts as needed -->
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Medium</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="medium" id="sinhala" value="Sinhala" required>
+            <label class="form-check-label" for="sinhala">Sinhala</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="medium" id="tamil" value="Tamil" required>
+            <label class="form-check-label" for="tamil">Tamil</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="medium" id="english" value="English" required>
+            <label class="form-check-label" for="english">English</label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="address" class="form-label">Address</label>
+          <textarea class="form-control" id="address" name="address" rows="2" required></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="contact" class="form-label">Contact Number</label>
+          <input type="tel" class="form-control" id="contact" name="contact" required>
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control form-control-lg rounded-3" id="email" required>
+          <input type="email" class="form-control" id="email" name="email" required>
         </div>
         <div class="mb-3">
-          <label for="phone" class="form-label">Phone</label>
-          <input type="tel" class="form-control form-control-lg rounded-3" id="phone">
+          <label for="notes" class="form-label">Additional Notes</label>
+          <textarea class="form-control" id="notes" name="notes" rows="2"></textarea>
         </div>
-        <div class="mb-3">
-          <label for="course" class="form-label">Course Interested In</label>
-          <input type="text" class="form-control form-control-lg rounded-3" id="course">
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control form-control-lg rounded-3" id="message" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-success w-100 modern-form-btn">Register</button>
+        <button type="submit" class="btn btn-lg w-100" style="background:var(--primary-red);color:white;">Submit</button>
+        <div id="formMessage" class="mt-3"></div>
       </form>
     </div>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Smooth page-by-page scroll and pop-up effect
-    document.addEventListener('DOMContentLoaded', function() {
-      // Page-by-page scroll
-      const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-      navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-          const href = this.getAttribute('href');
-          if (href.startsWith('#')) {
-            e.preventDefault();
-            const target = document.querySelector(href);
-            if (target) {
-              target.scrollIntoView({ behavior: 'smooth' });
-            }
-          }
-        });
-      });
+  <!-- Footer -->
+  <footer class="py-4" style="background:var(--dark-navy);color:white;">
+    <div class="container text-center">
+      <div class="mb-2">
+        <a href="#" class="me-2" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="me-2" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="me-2" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="me-2" title="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <div>© 2025 ICT Teacher. All rights reserved.</div>
+    </div>
+  </footer>
 
-      // Highlight active menu item based on scroll
-      const sectionIds = Array.from(navLinks).map(link => link.getAttribute('href')).filter(href => href.startsWith('#')).map(href => href.slice(1));
-      const highlightMenu = () => {
-        let currentSection = sectionIds[0];
-        for (const id of sectionIds) {
-          const section = document.getElementById(id);
-          if (section) {
-            const rect = section.getBoundingClientRect();
-            if (rect.top <= 120 && rect.bottom > 120) {
-              currentSection = id;
-              break;
-            }
-          }
-        }
-        navLinks.forEach(link => {
-          if (link.getAttribute('href') === '#' + currentSection) {
-            link.classList.add('active');
-            link.style.color = '#b6b79b';
-            link.style.fontWeight = '600';
-          } else {
-            link.classList.remove('active');
-            link.style.color = '#222';
-            link.style.fontWeight = '400';
-          }
-        });
-      };
-      window.addEventListener('scroll', highlightMenu);
-      window.addEventListener('DOMContentLoaded', highlightMenu);
-      // Pop-up effect for section components
-      const sections = document.querySelectorAll('section');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('pop-in');
-          } else {
-            entry.target.classList.remove('pop-in');
-            entry.target.classList.add('pop-init');
-          }
-        });
-      }, { threshold: 0.5 });
-      sections.forEach(section => {
-        section.classList.add('pop-init');
-        observer.observe(section);
-      });
-      // Scroll to Top Button
-      const scrollBtn = document.getElementById('scrollTopBtn');
-      window.addEventListener('scroll', function() {
-        if (window.scrollY > 300) {
-          scrollBtn.style.display = 'flex';
-        } else {
-          scrollBtn.style.display = 'none';
-        }
-      });
-      scrollBtn.addEventListener('click', function() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-      // Smooth auto-scroll for video gallery when in view
-      const videoSection = document.getElementById('videos');
-      const videoTrack = document.querySelector('.video-track');
-      let videoScrollInterval;
-      if (videoSection && videoTrack) {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              let videoIndex = 0;
-              clearInterval(videoScrollInterval);
-              videoScrollInterval = setInterval(() => {
-                videoIndex = (videoIndex + 1) % videoTrack.children.length;
-                videoTrack.style.transform = `translateX(-${videoIndex * 364}px)`;
-              }, 4000);
-            } else {
-              clearInterval(videoScrollInterval);
-              videoTrack.style.transform = 'translateX(0)';
-            }
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+  <!-- AOS Animation JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+// Fixed Gallery Modal JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+  // Image popup functionality
+  const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+  // Image gallery popup
+  document.querySelectorAll('.gallery-img').forEach(img => {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      const modalImage = document.getElementById('modalImage');
+      modalImage.src = this.src;
+      modalImage.alt = this.alt;
+      imageModal.show();
+    });
+  });
+  // Video gallery: open YouTube in new tab
+  document.querySelectorAll('.video-thumb').forEach(img => {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      const videoUrl = this.getAttribute('data-video');
+      if (videoUrl) {
+        window.open(videoUrl + '?autoplay=1&rel=0', '_blank');
+      }
+    });
+  });
+  // Clear image source when modal closes
+  document.getElementById('imageModal').addEventListener('hidden.bs.modal', function() {
+    document.getElementById('modalImage').src = '';
+  });
+  // Close modal when clicking outside the content
+  document.getElementById('imageModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+      imageModal.hide();
+    }
+  });
+  // Keyboard support - close on ESC
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      if (document.getElementById('imageModal').classList.contains('show')) {
+        imageModal.hide();
+      }
+    }
+  });
+});
+  </script>
+  <script>
+    // Navbar background on scroll
+  // Navbar stays solid at all times
+  // No scroll event needed for background color
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) {
+          e.preventDefault();
+          window.scrollTo({
+            top: target.offsetTop - 60,
+            behavior: 'smooth'
           });
-        }, { threshold: 0.5 });
-        observer.observe(videoSection);
+        }
+      });
+    });
+
+    // Scroll Progress Indicator
+    const progressCircle = document.getElementById('progressCircle');
+    const radius = 26;
+    const circumference = 2 * Math.PI * radius;
+    progressCircle.setAttribute('stroke-dasharray', circumference);
+    function updateScrollProgress() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      const docHeight = Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight,
+        document.body.offsetHeight,
+        document.documentElement.offsetHeight,
+        document.body.clientHeight,
+        document.documentElement.clientHeight
+      ) - window.innerHeight;
+      const progress = docHeight > 0 ? scrollTop / docHeight : 0;
+      const offset = circumference * (1 - progress);
+      progressCircle.setAttribute('stroke-dashoffset', offset);
+    }
+    window.addEventListener('scroll', updateScrollProgress);
+    window.addEventListener('resize', updateScrollProgress);
+    document.addEventListener('DOMContentLoaded', updateScrollProgress);
+    document.getElementById('scrollProgress').addEventListener('click', () => {
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+
+    // AOS init
+    AOS.init({
+      duration: 800,
+      once: false,
+      easing: 'ease-in-out',
+    });
+
+    // Counter animation
+    function animateCounter(id, end, duration) {
+      let start = 0;
+      const increment = end / (duration / 16);
+      const el = document.getElementById(id);
+      function update() {
+        start += increment;
+        if(start < end) {
+          el.textContent = Math.floor(start);
+          requestAnimationFrame(update);
+        } else {
+          el.textContent = end;
+        }
+      }
+      update();
+    }
+    animateCounter('counterStudents', 1000, 1200);
+    animateCounter('counterPass', 95, 1200);
+
+    // Form validation and submission
+    document.getElementById('joinForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = e.target;
+      let valid = true;
+      form.querySelectorAll('input,select,textarea').forEach(input => {
+        if(input.required && !input.value) {
+          valid = false;
+          input.classList.add('is-invalid');
+        } else {
+          input.classList.remove('is-invalid');
+        }
+      });
+      const message = document.getElementById('formMessage');
+      if(valid) {
+        message.innerHTML = '<div class="alert alert-success">Thank you for joining! We will contact you soon.</div>';
+        form.reset();
+      } else {
+        message.innerHTML = '<div class="alert alert-danger">Please fill all required fields correctly.</div>';
       }
     });
   </script>
-  <style>
-    .pop-init { opacity:0; transform:scale(0.95) translateY(40px); transition:all 0.7s cubic-bezier(.77,0,.18,1); }
-    .pop-in { opacity:1 !important; transform:scale(1) translateY(0) !important; }
-    section { min-width:100vw; }
-    .border-sides-about {
-      border-left: 6px solid #b6b79b;
-      border-right: 6px solid #b6b79b;
-      box-sizing: border-box;
-    }
-    @media (max-width: 768px) {
-  #home, #mainBannerCarousel, .carousel-inner, .carousel-item, .banner-img-wrapper, .banner-img-wrapper img {
-    height: 60vh !important;
-    min-height: 300px !important;
-  }
-  .carousel-caption {
-    left: 5% !important;
-    top: 20% !important;
-    font-size: 1.2rem !important;
-  }
-}
-.carousel-indicators [data-bs-target] {
-  opacity: 0.5;
-  transition: opacity 0.2s, background 0.2s;
-}
-.carousel-indicators .active {
-  opacity: 1;
-  background: #b6b79b !important;
-}
-  </style>
 </body>
 </html>
